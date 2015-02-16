@@ -1,0 +1,17 @@
+configure command: ./configure 
+lun feb 16 16:10:52 CET 2015
+
+PREFIX=/usr/local
+BINDIR=/usr/local/bin
+DATADIR=/usr/local/share/qbrew
+DOCDIR=/usr/local/share/doc/qbrew
+QTDIR=
+QMAKESPEC=
+ENABLE_DEBUG=
+BUILDMODE=release
+
+found qmake at /usr/bin/qmake
+found Qt version 5.1.1
+g++ -c -m64 -pipe -O2 -D_REENTRANT -Wall -W -fPIE -DQT_NO_DEBUG -DQT_CORE_LIB -I/usr/share/qt5/mkspecs/linux-g++-64 -I. -I/usr/include/qt5 -I/usr/include/qt5/QtCore -I. -o config.o config.cpp
+g++ -m64 -Wl,-O1 -o config config.o   -lQt5Core -lpthread 
+built simple Qt program
