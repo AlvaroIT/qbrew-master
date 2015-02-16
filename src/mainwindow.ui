@@ -268,7 +268,7 @@
   </action>
   <action name="actionalcoholtool">
    <property name="text">
-    <string>&amp;Alcohol Percentage...</string>
+    <string>&amp;Alcohol % Calculator</string>
    </property>
    <property name="statusTip">
     <string>Alcohol percentage calculator</string>
@@ -284,7 +284,7 @@
   </action>
   <action name="actiondatabasetool">
    <property name="text">
-    <string>&amp;Database Editor...</string>
+    <string>&amp;Database Editor</string>
    </property>
    <property name="statusTip">
     <string>Database editor</string>

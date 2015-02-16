@@ -211,18 +211,28 @@ void QBrew::initActions()
     ui.actionfileexport->setIcon(icon);
     connect(ui.actionfileexport, SIGNAL(triggered()),
             this, SLOT(fileExport()));
+
     icon = QIcon(":/icons/22x22/application-exit.png");
     icon.addFile(":/icons/16x16/application-exit.png");
     ui.actionexit->setIcon(icon);
     connect(ui.actionexit, SIGNAL(triggered()), qApp,
             SLOT(closeAllWindows()));
 
+    icon = QIcon(":/icons/22x22/alcohol-calculator.png");
+    icon.addFile(":/icons/16x16/alcohol-calculator.png");
+    ui.actionalcoholtool->setIcon(icon);
     connect(ui.actionalcoholtool, SIGNAL(triggered()),
             this, SLOT(toolsAlcohol()));
+
+    icon = QIcon(":/icons/22x22/alcohol-calculator.png");
+    icon.addFile(":/icons/16x16/alcohol-calculator.png");
+    ui.actionhydrometertool->setIcon(icon);
     connect(ui.actionhydrometertool, SIGNAL(triggered()),
             this, SLOT(toolsHydrometer()));
+
     connect(ui.actionmashwatertool, SIGNAL(triggered()),
             this, SLOT(toolsMash()));
+
     connect(ui.actiondatabasetool, SIGNAL(triggered()),
             this, SLOT(toolsDatabase()));
 
@@ -556,7 +566,7 @@ void QBrew::fileExport()
 
 void QBrew::filePrintPreview()
 {
-    statusBar()->showMessage(tr("Print preview..."));
+    statusBar()->showMessage(tr("Print preview"));
 
     recipe_->previewRecipe(textprinter_);
     statusBar()->showMessage(tr(READY), 2000);
