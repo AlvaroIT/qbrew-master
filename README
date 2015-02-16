@@ -1,3 +1,21 @@
+QBrew, Version 0.5
+==================
+
+This is a personal amateur fork of Qbrew.
+The pourpose of this fork is to modify QBrew for my personal needs:
+	
+	- Learn how to programme with C++.
+	- Learn how to use qt5
+	- Learn how to use git
+	
+You can download the original QBrew code at <http://www.usermode.org/code.html>.
+Thanks a lot to Abe Kabakoff and Michal Palczewski and the others contributors.
+
+Please see the AUTHORS file for a list of contributors, and the ChangeLog file
+for a list of changes since the previous release.
+
+-----------------------------------------------------------------------------------
+
 QBrew, Version 0.4
 ==================
 
