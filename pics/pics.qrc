@@ -2,6 +2,9 @@
   <qresource prefix="/" >
     <file>icons/16x16/application-exit.png</file>
     <file>icons/16x16/alcohol-calculator.png</file>
+    <file>icons/16x16/hydrometer-correction.png</file>
+    <file>icons/16x16/mash-schedule.png</file>
+    <file>icons/16x16/database-editor.png</file>
     <file>icons/16x16/configure.png</file>
     <file>icons/16x16/document-export.png</file>
     <file>icons/16x16/document-new.png</file>

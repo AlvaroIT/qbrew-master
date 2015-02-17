@@ -9,7 +9,6 @@
 
 #include <QtGui>
 #include <QtWidgets>
-
 #include "alcoholtool.h"
 #include "configure.h"
 #include "data.h"
@@ -228,20 +227,27 @@ void QBrew::initActions()
     connect(ui.actionalcoholtool, SIGNAL(triggered()),
             this, SLOT(toolsAlcohol()));
 
-    icon = QIcon(":/icons/22x22/alcohol-calculator.png");
-    icon.addFile(":/icons/16x16/alcohol-calculator.png");
+    icon = QIcon(":/icons/22x22/hydrometer-correction.png");
+    icon.addFile(":/icons/16x16/hydrometer-correction.png");
     ui.actionhydrometertool->setIcon(icon);
     connect(ui.actionhydrometertool, SIGNAL(triggered()),
             this, SLOT(toolsHydrometer()));
-
+            
+	icon = QIcon(":/icons/22x22/mash-schedule.png");
+    icon.addFile(":/icons/16x16/mash-schedule.png");
+    ui.actionmashwatertool->setIcon(icon);
     connect(ui.actionmashwatertool, SIGNAL(triggered()),
-            this, SLOT(toolsMash()));
-
+            this, SLOT(toolsMash()));            
+            
+	icon = QIcon(":/icons/22x22/database-editor.png");
+    icon.addFile(":/icons/16x16/database-editor.png");
+    ui.actiondatabasetool->setIcon(icon);
     connect(ui.actiondatabasetool, SIGNAL(triggered()),
             this, SLOT(toolsDatabase()));
 
     connect(ui.actiontogglestatusbar, SIGNAL(toggled(bool)),
             this, SLOT(optionsStatusbar(bool)));
+            
     icon = QIcon(":/icons/22x22/configure.png");
     icon.addFile(":/icons/16x16/configure.png");
     ui.actionconfigure->setIcon(icon);
