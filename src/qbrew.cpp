@@ -57,12 +57,16 @@ void QBrew::initialize(const QString &filename)
 
     // show splashscreen
     if (state_.general.showsplash
-        && QFile::exists(dataBase() + tr("splash.png"))) {
-        QSplashScreen *splash = new QSplashScreen(dataBase() + tr("splash.png"),
+        && QFile::exists(/*dataBase() +*/ tr(":splash.png"))) {
+        QSplashScreen *splash = new QSplashScreen(/*dataBase() +*/ tr(":splash.png"),
 						 Qt::WindowStaysOnTopHint);
         splash->show();
-        QApplication::flush();
-        QTimer::singleShot(10000, splash, SLOT(close()));
+        /*
+		QSplashScreen *splash = new QSplashScreen( dataBase() + tr(":splash.png"),
+						 Qt::WindowStaysOnTopHint);
+        splash->show();*/
+        //QApplication::flush();
+        QTimer::singleShot(3000, splash, SLOT(close()));
     }
 
     // setup look and feel
