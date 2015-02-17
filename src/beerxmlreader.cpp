@@ -12,7 +12,6 @@
 #include "data.h"
 #include "recipe.h"
 #include "resource.h"
-
 #include "beerxmlreader.h"
 
 using namespace Resource;
